@@ -1,1 +1,83 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&display=swap');
+
+:root{
+    --main_color: #530653;
+    --black: #1f1133;
+    --light_bg: #eee;
+    --boder_bold: .5rem solid var(--black);
+    --boder_light: .2rem solid var(--black);
+    --shadow: rgba(0, 0, 0, 0.15) 3px 3px 4px, inset -3px -3px 6px -1px rgba(0, 0, 0, 0.15);
+    --neomorphism: inset 3px 3px 6px -1px rgba(0, 0, 0, 0.15),
+    inset -3px -3px 6px -1px rgba(255, 255, 255, 0.7),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+    0px 6px 9px -12px rgba(0, 0, 0, 0.15);
+    --big: inset 9px 9px 18px -1px rgba(0, 0, 0, 0.15),
+    inset -9px -9px 18px -1px rgba(255, 255, 255, 0.7),
+    1px 1px 0px rgba(0, 0, 0, 0.15),
+    0px 12px 18px -24px rgba(0, 0, 0, 0.15);
+    --gradient:linear-gradient(to right, #F27121, #E94057, #8a1bac);
+}
+
+*{
+  margin: 0;padding: 0;
+  box-sizing: border-box;
+  outline: none;border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+*::selection{
+  border-color: var(--black);
+  color: #fff;
+  background-color: #E94057;
+}
+
+*::-webkit-scrollbar{
+  height: 0.5rem;
+  width: 1rem;
+}
+
+*::-webkit-scrollbar-track{
+  border-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+  border-color: var(--main_color);
+}
+
+html{
+  font-family: 'Noto Serif JP', serif;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  letter-spacing: .3px;
+  color: var(--black);
+}
+
+body{
+  background-image: linear-gradient( 135deg, #ee9ae666 10%, #5961f966 100%);
+}
+
+.cv{
+  max-width: 1280px;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 12px, inset 0px -3px 12px -1px rgba(0, 0, 0, 0.15);
+}
+
+
+@media (max-width: 1200px) {
+  .cv{
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 768px) {
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+

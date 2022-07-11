@@ -1,0 +1,57 @@
+.flex{
+  display: flex;
+}
+
+.container{
+  background-color: #eee;
+  padding: 3rem;
+  text-align: center;
+  width: 36rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.content{
+  width: calc(1280px - (36rem));
+  min-height: 100vh;
+  background-color: #e5e5e5;
+  display: flex;
+  padding: 1.5rem;
+  gap: 1.5rem;
+}
+
+.content .exp,
+.content .skill{
+  flex: 1 1;
+  background: #eee;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+
+@media (max-width: 1200px) {
+  .flex{
+    display: table;
+  }
+
+  .container{
+    display: table;
+    width: 100%;
+    min-height: none;
+  }
+
+  .content{
+    width: 100%;
+    min-height: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .content{
+    display: table;
+    width: 100%;
+  }
+}
